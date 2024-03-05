@@ -6,7 +6,6 @@ RandomQueue is a Python application that allows Spotify users to add random trac
 
 - Add a specified number of random tracks to the user's Spotify queue
 - Tracks are selected from a wide range of genres
-- User-friendly interface with slider to select the number of tracks
 
 ## Before you install
 
