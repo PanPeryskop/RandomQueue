@@ -235,7 +235,6 @@ def add_random_track_to_queue():
               'Workout', 'World', 'World Chill', 'World Christmas', 'World Fusion', 'Worship', 'Wrestling', 'Wrock', 'Ye Ye', 'Yoik',
               'Yugoslav Rock', 'Zeuhl', 'Zillertal', 'Zim', 'Zolo', 'Zouglou', 'Zouk', 'Zydeco' ]
 
-    genres.extend(get_genres())
     random_genre = random.choice(genres)
     results = sp.search(q=f'genre:"{random_genre}"', type='track', limit=50)
     tracks = results['tracks']['items']
@@ -293,15 +292,11 @@ def process_user_input(input, user_input, input_frame):
         thread = threading.Thread(target=add_queue)  # Remove the parentheses after add_queue
         thread.start()
         check_thread(thread, wait_label)
+
     else:
         error_label = tk.CTkLabel(app, text="Please enter a number.")
         error_label.pack()
         app.after(5000, error_label.destroy)
-
-
-def get_genres():
-    genres = sp.recommendation_genre_seeds()
-    return genres['genres']
 
 
 def get_user_input(input_frame):
