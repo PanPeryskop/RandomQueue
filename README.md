@@ -22,7 +22,7 @@ Before you can use RandomQueue, you need to create a Spotify Developer applicati
 
 ## Installation
 
-1. Go to the release section of this repository. [Current release.](https://github.com/PanPeryskop/RandomQueue/releases/tag/v1.0)
+1. Go to the release section of this repository. [Current release.](https://github.com/PanPeryskop/RandomQueue/releases/tag/v1.1)
 2. Click on **RandomQueue.zip**. Download will start automatically.
 3. Extract the zip file.
 4. Open the extracted folder and run `RandomQueue.exe`.
